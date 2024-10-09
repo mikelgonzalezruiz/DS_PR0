@@ -1,6 +1,7 @@
 package edu.uoc.ds.adt;
 
 import edu.uoc.test.util.FunctionUtils;
+import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 
@@ -28,7 +29,7 @@ public class PR0StackTest {
         this.pr1s = null;
     }
 
-    @org.junit.Test
+    @Test
     public void stackTest() {
 
         assertEquals(this.pr1s.CAPACITY, this.pr1s.getStack().size());

@@ -3,7 +3,7 @@ package edu.uoc.ds.adt;
 import edu.uoc.test.util.FunctionUtils;
 import org.junit.After;
 import org.junit.Before;
-
+import org.junit.Test;
 import org.junit.Assert;
 
 import static junit.framework.TestCase.assertEquals;
@@ -30,7 +30,7 @@ public class PR0QueueTest {
         this.pr1q = null;
     }
 
-    @org.junit.Test
+    @Test
     public void queueTest() {
         assertEquals(this.pr1q.CAPACITY, this.pr1q.getQueue().size());
         Assert.assertEquals(1, pr1q.getQueue().poll(), 0);
