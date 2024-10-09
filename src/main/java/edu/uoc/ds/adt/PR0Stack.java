@@ -4,17 +4,18 @@ package edu.uoc.ds.adt;
 import edu.uoc.ds.adt.sequential.Stack;
 import edu.uoc.ds.adt.sequential.StackArrayImpl;
 
-public class PR0Stack {
-    public final int CAPACITY = 10;
+public class PR0Stack<T> {
 
-    private Stack<Character> stack;
+    public final int CAPACITY = 15;
+
+    private Stack<T> stack;
 
     public PR0Stack() {
         newStack();
     }
 
     public void newStack() {
-        stack = new StackArrayImpl<Character>(CAPACITY);
+        stack = new StackArrayImpl<T>(CAPACITY);
     }
 
 
@@ -25,11 +26,11 @@ public class PR0Stack {
         return sb.toString();
     }
 
-    public Stack<Character> getStack() {
+    public Stack<T> getStack() {
         return this.stack;
     }
 
-    public void push(Character c) {
-        this.stack.push(c);
+    public void push(T value) {
+        this.stack.push(value);
     }
 }

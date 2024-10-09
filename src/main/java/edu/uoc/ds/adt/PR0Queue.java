@@ -4,11 +4,11 @@ package edu.uoc.ds.adt;
 import edu.uoc.ds.adt.sequential.Queue;
 import edu.uoc.ds.adt.sequential.QueueArrayImpl;
 
-public class PR0Queue {
+public class PR0Queue<T> {
 
-    public final int CAPACITY = 10;
+    public final int CAPACITY = 15;
 
-    private Queue<Character> queue;
+    private Queue<T> queue;
 
     public PR0Queue() {
         newQueue();
@@ -27,11 +27,11 @@ public class PR0Queue {
         return sb.toString();
     }
 
-    public Queue<Character> getQueue() {
+    public Queue<T> getQueue() {
         return this.queue;
     }
 
-    public void add(Character c) {
+    public void add(T c) {
         this.queue.add(c);
     }
 }
